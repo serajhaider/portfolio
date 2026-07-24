@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://serajhaidar.com.np%{REQUEST_URI} [L,R=301]
