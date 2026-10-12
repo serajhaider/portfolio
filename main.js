@@ -102,6 +102,12 @@ function setupContactForm() {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const fd = new FormData(form);
+    fd.set("access_key", "f49511b2-69d5-4507-972f-2ccc361c85b3");
+    fd.set("from_name", "Seraj Rain | Portfolio");
+    fd.set(
+      "subject",
+      `Portfolio message from ${fd.get("name")}: ${fd.get("subject")}`
+    );
 
     // Client-side validation: Check empty
     let hasError = false;
@@ -125,7 +131,7 @@ function setupContactForm() {
     }
 
     try {
-      const res = await fetch(`contact.php`, {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: fd,
       });
@@ -506,4 +512,3 @@ setupToTop();
 
 const cleanup3d = setupThree();
 window.addEventListener("beforeunload", () => cleanup3d?.());
-
