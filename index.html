@@ -1,19 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seraj Haidar Rain</title>
-  
-  <meta name="description" content="Official portfolio of Seraj Haidar Rain, full-stack developer from Nepal skilled in HTML, CSS, JavaScript, PHP, and MySQL.">
+  <title>Seraj Haidar Rain | Full-Stack Developer in Nepal</title>
+
+  <meta name="description" content="Portfolio of Seraj Haidar Rain, a full-stack developer in Nepal building responsive web applications with JavaScript, PHP, MySQL, and modern frontend tools.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://serajhaidar.com.np/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Seraj Haidar Rain">
+  <meta property="og:title" content="Seraj Haidar Rain | Full-Stack Developer in Nepal">
+  <meta property="og:description" content="Portfolio of Seraj Haidar Rain, a full-stack developer in Nepal building responsive web applications with JavaScript, PHP, MySQL, and modern frontend tools.">
+  <meta property="og:url" content="https://serajhaidar.com.np/">
+  <meta property="og:image" content="https://serajhaidar.com.np/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Seraj Haidar Rain, full-stack developer in Nepal">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Seraj Haidar Rain | Full-Stack Developer in Nepal">
+  <meta name="twitter:description" content="Portfolio of Seraj Haidar Rain, a full-stack developer in Nepal building responsive web applications with JavaScript, PHP, MySQL, and modern frontend tools.">
+  <meta name="twitter:image" content="https://serajhaidar.com.np/og-image.jpg">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Seraj Haidar Rain",
-    "url": "https://serajhaidar.com.np/",
-    "alternateName": "Seraj Haidar Rain"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://serajhaidar.com.np/#website",
+        "name": "Seraj Haidar Rain",
+        "url": "https://serajhaidar.com.np/",
+        "publisher": {
+          "@id": "https://serajhaidar.com.np/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://serajhaidar.com.np/#person",
+        "name": "Seraj Haidar Rain",
+        "url": "https://serajhaidar.com.np/",
+        "image": "https://serajhaidar.com.np/raza.JPG",
+        "jobTitle": "Full-stack developer",
+        "sameAs": [
+          "https://github.com/serajhaider",
+          "https://www.linkedin.com/in/seraj-haidar-5742053bb/"
+        ]
+      }
+    ]
   }
   </script>
 
@@ -245,7 +281,7 @@
           <h2 class="h2" data-animate="slide-right">Projects</h2>
           <!-- <p class="muted" data-animate="fade-in" style="--d: 2;">-->
           <!--  Add links, screenshots, and real descriptions. Cards are easy to duplicate.-->
-          <!--</p> -->-->
+          <!--</p> -->
         </div>
 
         <div class="projects">
@@ -385,9 +421,9 @@
               <span class="muted">Courses • Certifications</span>
             </div>
             <ul class="bullets">
-              <li>HTML, CSS, JavaScript, PHP & MySQL Development, Python Programming, OOPD etc...</li>
+              <li>HTML, CSS, JavaScript, PHP &amp; MySQL Development, Python Programming, OOPD etc...</li>
               <li>C# </li>
-              <li>Full-Stack Development Workshop, AI/ML Basics Workshop, Git & GitHub Version Control Workshop</li>
+              <li>Full-Stack Development Workshop, AI/ML Basics Workshop, Git &amp; GitHub Version Control Workshop</li>
             </ul>
           </div>
         </div>
@@ -412,7 +448,7 @@
             <h3 class="h3">Send a message</h3>
             <label class="field contact-field" style="--d: 1;">
               <span>Name</span>
-              <input name="name" autocomplete="name" placeholder="Your name" required />
+              <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
             </label>
             <label class="field contact-field" style="--d: 2;">
               <span>Email</span>
@@ -420,7 +456,7 @@
             </label>
             <label class="field contact-field" style="--d: 2.5;">
               <span>Subject</span>
-              <input name="subject" placeholder="What is this regarding?" required />
+              <input type="text" name="subject" placeholder="What is this regarding?" required />
             </label>
             <label class="field contact-field" style="--d: 3;">
               <span>Message</span>
@@ -433,130 +469,13 @@
             <div class="profile-photo-container">
               <div class="outer-ring"></div>
               <div class="inner-ring">
-                <img src="raza.JPG" alt="Profile photo" class="profile-photo" />
+                <img src="raza.JPG" alt="Seraj Haidar Rain, full-stack developer" class="profile-photo" />
               </div>
             </div>
             <div class="availability-badge">
               <span class="pulsing-dot"></span> Available for work ✦
             </div>
 
-            <style>
-              .contact-profile-wrapper {
-                flex: 0 0 auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 24px;
-                animation: float-bob 4s ease-in-out infinite;
-                position: relative;
-              }
-
-              .profile-photo-container {
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
-
-              /* Soft radial glow */
-              .profile-photo-container::before {
-                content: '';
-                position: absolute;
-                inset: -50px;
-                background: radial-gradient(circle, rgba(255, 179, 71, 0.25) 0%, transparent 70%);
-                border-radius: 50%;
-                z-index: 0;
-                pointer-events: none;
-              }
-
-              .inner-ring {
-                position: relative;
-                padding: 4px;
-                border-radius: 50%;
-                background: linear-gradient(135deg, var(--accent, #ff6b6b), var(--accent2, #ffb347));
-                box-shadow: 0 0 25px rgba(255, 179, 71, 0.6);
-                z-index: 2;
-                display: flex;
-              }
-
-              .outer-ring {
-                position: absolute;
-                inset: -16px;
-                border-radius: 50%;
-                border: 2px dashed rgba(255, 179, 71, 0.5);
-                animation: spin-ring 15s linear infinite;
-                z-index: 1;
-              }
-
-              .profile-photo {
-                width: 300px;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 50%;
-                background-color: var(--bg2);
-                border: 4px solid var(--bg, #070914);
-              }
-
-              .availability-badge {
-                background: rgba(7, 9, 20, 0.8);
-                border: 1px solid rgba(255, 255, 255, 0.08);
-                padding: 8px 18px;
-                border-radius: 999px;
-                font-size: 14.5px;
-                color: rgba(255, 255, 255, 0.95);
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                box-shadow: var(--shadow2);
-                z-index: 3;
-                backdrop-filter: blur(8px);
-              }
-
-              .pulsing-dot {
-                width: 8px;
-                height: 8px;
-                background-color: #4ade80;
-                border-radius: 50%;
-                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
-                animation: pulse-dot 2s infinite;
-              }
-
-              @keyframes float-bob {
-
-                0%,
-                100% {
-                  transform: translateY(0);
-                }
-
-                50% {
-                  transform: translateY(-12px);
-                }
-              }
-
-              @keyframes spin-ring {
-                0% {
-                  transform: rotate(0deg);
-                }
-
-                100% {
-                  transform: rotate(360deg);
-                }
-              }
-
-              @keyframes pulse-dot {
-                0% {
-                  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
-                }
-
-                70% {
-                  box-shadow: 0 0 0 6px rgba(74, 222, 128, 0);
-                }
-
-                100% {
-                  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
-                }
-              }
-            </style>
           </div>
         </div>
       </div>
